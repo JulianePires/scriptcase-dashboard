@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $FontFamily_Main;
+  color: $Scritpcase_Text;
+}
+
+b, p, h1, h2, h3, h4 {
+  color: $Scritpcase_Text;
+}
+
+button, input, select, textarea {
+  font-family: $FontFamily_Main;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  @include margin-page;
+	@include font-variation;
+}
+
+.hstack {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input, select {
+  width: 400px;
+  height: 30px;
+  border: 1px solid $Scriptcase_Borders;
+  border-radius: 4px;
+  padding: 0 0.5rem;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

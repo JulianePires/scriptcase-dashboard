@@ -1,0 +1,50 @@
+@import "../../assets/scss/_conf.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 36px;
+
+  background: $Scriptcase_Gradient_Header;
+
+  div {
+    display: flex;
+  }
+
+  span {
+    height: 36px;
+    position: relative;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    color: $Scriptcase_White;
+    font-weight: 500;
+
+    padding: 0 1rem;
+    height: 36px;
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    &:hover {
+      background: $Scriptcase_White;
+      color: $Scriptcase_Dark_Blue;
+    }
+  }
+}
+
+.navbar-logo {
+  padding: 5px;
+  height: 36px;
+
+  background: $Scriptcase_Dark_Blue;
+
+  img {
+    max-height: 24px;
+  }
+}

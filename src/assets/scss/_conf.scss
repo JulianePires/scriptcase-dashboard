@@ -1,0 +1,51 @@
+/*|--| App Color Schema |--|*/
+$Scriptcase_Dark_Blue: #2e3f54;
+$Scriptcase_Dark_Blue_2: #2b3e53;
+$Scriptcase_Blue: #044593;
+$Scritpcase_Button: #0275d8;
+$Scriptcase_Details: #57c8ff;
+$Scriptcase_White: #ffffff;
+$Scritpcase_Text: #3c4858;
+$Scriptcase_Borders: #d4d4d5;
+$Scriptcase_Fill: #fafafc;
+$Scriptcase_Gray: #d6e0e5;
+$Scriptcase_Gradient_Header: linear-gradient(
+  90.11deg,
+  $Scriptcase_Dark_Blue_2 0%,
+  $Scriptcase_Blue 100%
+);
+
+/*|--| Typography |--|*/
+$FontFamily_Main: "Roboto", sans-serif;
+$FontFamily_Title: "Lato", sans-serif;
+
+/*|---------------| BREAKPOINTS|---------------*/
+
+// Usage example:  @media #{$BREAKPOINT-DESK}
+
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";
+
+/*|---------------|MIXINS|---------------*/
+
+@mixin margin-page {
+  margin: 0 auto;
+
+  @media #{$BREAKPOINT-DESK} {
+    max-width: 1918px;
+  }
+}
+
+@mixin font-variation {
+  font-size: 16px;
+
+  @media #{$BREAKPOINT-TABLET-LAND} {
+    font-size: 93.75%; //15px
+  }
+
+  @media #{$BREAKPOINT-TABLET} {
+    font-size: 87.5%; //14px
+  }
+}

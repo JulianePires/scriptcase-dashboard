@@ -1,0 +1,69 @@
+@import "../../assets/scss/_conf.scss";
+
+.edit-project-container {
+  margin: 3rem 9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-bottom: 4rem;
+
+  section {
+    display: flex;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    color: $Scritpcase_Button;
+    font-size: 1.4rem;
+    margin-right: 0.2rem;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $Scriptcase_Details;
+    }
+  }
+}
+
+.edit-project-image {
+  img {
+    width: 12rem;
+    height: 9rem;
+    object-fit: cover;
+
+    border: 1px solid $Scriptcase_Borders;
+    border-radius: 4px;
+  }
+}
+
+.edit-project-info {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  b {
+    font-size: 1.2rem;
+  }
+}
+
+.edit-project-texteditor-container {
+  min-height: 15rem;
+  width: 100%;
+  border: 0px solid $Scriptcase_Borders;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-project-texteditor-footer {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
+  height: 1.5rem;
+  background: $Scriptcase_Fill;
+  border: 1px solid $Scriptcase_Borders;
+}

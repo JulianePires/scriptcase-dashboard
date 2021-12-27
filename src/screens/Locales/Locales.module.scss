@@ -1,0 +1,12 @@
+@import "../../assets/scss/_conf.scss";
+
+.locales-container {
+  margin: 3rem 9rem;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+      font-family: $FontFamily_Title;
+      font-weight: 500;
+  }
+}

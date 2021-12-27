@@ -1,0 +1,75 @@
+@import "../../../assets/scss/_conf.scss";
+
+.tab-controller-container {
+  width: 90%;
+  margin: 1em 5%;
+  padding-left: 4rem;
+
+  border-bottom: 2px solid $Scriptcase_Borders;
+
+  display: flex;
+  position: relative;
+
+  button {
+    background: none;
+    border: none;
+    transform: translateY(2px);
+
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    padding: 0.5rem 1rem;
+    color: $Scriptcase_Dark_Blue_2;
+    transition: color 0.2s;
+    border-radius: 4px 4px 0 0;
+
+    &:hover {
+      color: $Scriptcase_Details;
+    }
+  }
+
+  .active-tab {
+    font-weight: 600;
+    border-left: 2px solid $Scriptcase_Borders;
+    border-right: 2px solid $Scriptcase_Borders;
+    border-top: 2px solid $Scritpcase_Button;
+    border-bottom: 3px solid $Scriptcase_White;
+  }
+}
+
+.tab-controller-save-buttons {
+  display: flex;
+  gap: 1rem;
+  padding: 0.2rem 1rem;
+  position: absolute;
+  right: 2em;
+  bottom: 0.5em; 
+
+  button {
+    width: 100px;
+    border-radius: 25px;
+    color: white;
+    border: 2px solid $Scritpcase_Button;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0px);
+    font-size: 1rem;
+
+    &:nth-child(1) {
+      color: $Scritpcase_Button;
+
+      &:hover {
+        background: $Scritpcase_Button;
+        color: $Scriptcase_White;
+      }
+    }
+
+    &:nth-child(2) {
+      background: $Scritpcase_Button;
+
+      &:hover {
+        filter: opacity(0.8);
+        color: $Scriptcase_White;
+      }
+    }
+  }
+}
